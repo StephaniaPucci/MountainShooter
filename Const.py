@@ -9,6 +9,8 @@ MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COMPETITIVE',
                'SCORE',
                'EXIT')
+#H
+
 
 #W
 WIN_WIDTH = 576
