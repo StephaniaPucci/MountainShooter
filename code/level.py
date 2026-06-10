@@ -42,6 +42,7 @@ class Level:
                 if isinstance(ent, (Player, Enemy)):
                     shoot = ent.shoot()
                     if shoot is not None:
+                        print(type(shoot))
                         self.entity_list.append(shoot)
 
             for event in pygame.event.get():
