@@ -6,7 +6,7 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from Const import WIN_WIDTH, COLOR_ORANGE, COLOR_WHITE, MENU_OPTION, COLOR_YELLOW
+from Const import WIN_WIDTH, COLOR_ORANGE, COLOR_WHITE, MENU_OPTION, COLOR_YELLOW, COLOR_BLUE
 
 
 class Menu:
@@ -23,8 +23,8 @@ class Menu:
         while True:
             #DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Mountain", COLOR_ORANGE,(WIN_WIDTH / 2, 70))
-            self.menu_text(50, "Shooter", COLOR_ORANGE,(WIN_WIDTH / 2, 120))
+            self.menu_text(50, "Mountain", COLOR_BLUE,(WIN_WIDTH / 2, 70))
+            self.menu_text(50, "Shooter", COLOR_BLUE,(WIN_WIDTH / 2, 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
